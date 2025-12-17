@@ -1,6 +1,12 @@
 html {
   font-family: Helvetica;
-  background-color: #ddd;
+  background-color: black;
+}
+
+.subtitulos{
+  color: #b80d0d;
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 1px 1px 0 #000;
 }
 
 .container {
@@ -22,10 +28,14 @@ html {
 
 .main-title {
   font-size: 40px;
+  color: #b80d0d;
+  -webkit-text-stroke: 2px #000;
+  text-shadow: 2px 2px 0 #000; 
 }
 
 .main-paragraph {
   font-style: italic;
+  color: #6f6e6e;
 }
 
 /* Imagem destaque */
@@ -44,8 +54,11 @@ html {
 
 /* Quotes */
 .quotes-container {
-  background-color: #ddd;
+  background: #1b1b1b;     /* cinza bem escuro (carvão) */
+  color: #f2f2f2;          /* texto claro */
+  border-left: 6px solid #b80d0d;  /* detalhe vermelho */
   padding: 30px;
+  border-radius: 6px;
 }
 
 .quotes-container blockquote {
