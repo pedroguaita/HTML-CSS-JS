@@ -35,6 +35,8 @@ li {
 
 .center {
     text-align: center;
+    background-color: #aaaccb;
+    margin-top: 0;
 }
 
 .subtitle {

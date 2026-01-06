@@ -20,7 +20,7 @@ h3{
     padding: 5px;
 }
 
-/* List-Style */
+/* List-Style 
 ul li {
     list-style-type: disc;
     list-style-position: inside;
@@ -30,6 +30,7 @@ ol li{
     list-style-type: lower-alpha;
     list-style: decimal;
 }
+*/
 
 /*IDs*/
 #exclusive-title{
