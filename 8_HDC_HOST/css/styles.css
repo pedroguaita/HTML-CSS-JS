@@ -378,3 +378,28 @@ footer {
     margin: 10px 0;
   }
 }
+
+/* Mobile M 375px */
+@media (max-width: 574px) {
+    
+    .navbar-items li {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+    .main-banner p {
+    padding: 0 1rem;
+  }
+
+  .searchdomain-container input {
+    width: 100%;
+  }
+  
+  .searchdomain-container input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    font-size: 17.5px;
+    margin-bottom: 25px;
+  }
+
+}
