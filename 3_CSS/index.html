@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS</title>
 
     <!-- 3 - Internal CSS -->
     <style>
-        p{
-            /* color:gold; 
+      p {
+        /* color:gold; 
             font-size: 40px; */
-        }
+      }
 
-        h1{
-            color:rgb(10, 130, 235);
-        }
-    </style> 
+      h1 {
+        color: rgb(10, 130, 235);
+      }
+    </style>
 
     <!-- 4 - External CSS -->
-    <link rel="stylesheet" href="css/styles.css"> 
-    <link rel="stylesheet" href="css/lists.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/lists.css" />
+  </head>
 
-
-<body>
+  <body>
     <!-- 1 - Inline CSS -->
-    <h1 style="color:red">Mudar cor com inline</h1>
-    <h1 style="color:blueviolet">Outro título</h1>
-    
+    <h1 style="color: red">Mudar cor com inline</h1>
+    <h1 style="color: blueviolet">Outro título</h1>
+
     <!--2 - Múltiplas regras  -->
-    <h1 style="color:blue; font-size: 60px; border-bottom: 1px solid red;">Mudar cor e tamanho da fonte</h1>
+    <h1 style="color: blue; font-size: 60px; border-bottom: 1px solid red">
+      Mudar cor e tamanho da fonte
+    </h1>
 
     <!-- 47 - Position sticky  -->
     <div class="sticky">
-        <span>eu sou sticky</span>
+      <span>eu sou sticky</span>
     </div>
 
     <!-- 3 - Internal CSS -->
@@ -48,14 +48,14 @@
     <h3>Meu título verde</h3>
 
     <!-- 5 - Ordem do CSS -->
-    <p style="color:chocolate">Ordem do CSS</p>
+    <p style="color: chocolate">Ordem do CSS</p>
     <p>Ordem do CSS</p>
 
     <!-- 6 - Múltiplos arquivos de CSS -->
     <ul>
-        <li>banana</li>
-        <li>maça</li>
-        <li>uva</li>
+      <li>banana</li>
+      <li>maça</li>
+      <li>uva</li>
     </ul>
 
     <!-- 7.Desafio -->
@@ -91,41 +91,41 @@
     <p class="rgba">este foi estilizado com RGBa</p>
 
     <!-- 16 - HSL -->
-    <p class="hsl">Estilizado com HSL</p> 
-    <p class="hsl2">Estilizado com HSL</p> 
+    <p class="hsl">Estilizado com HSL</p>
+    <p class="hsl2">Estilizado com HSL</p>
 
     <!-- 17 - background-color -->
     <p class="bg">Mude o meu background</p>
-    <h2 class="bg-2">outra variação de  BG</h2>
+    <h2 class="bg-2">outra variação de BG</h2>
 
     <!-- 18 - Opacidade no BG -->
-    <div class="bg-opacity"> 
-        <p>Opacidade BG</p>
+    <div class="bg-opacity">
+      <p>Opacidade BG</p>
     </div>
 
-    <div class="bg-opacity-2"> 
-        <p>Opacidade BG-2</p>
+    <div class="bg-opacity-2">
+      <p>Opacidade BG-2</p>
     </div>
 
     <!-- 19 - RGBa com opacidade -->
     <div class="rgba-opacity">
-        <h1>RGBa com opacidade</h1>
+      <h1>RGBa com opacidade</h1>
     </div>
 
     <!-- 20 - Imagem no BG -->
-    <h1 class="bg-image"> Este título tem uma imagem</h1>
+    <h1 class="bg-image">Este título tem uma imagem</h1>
 
     <!-- 21 - Centralizar a imagem do BG -->
     <div class="not-centered-bg"></div>
     <div class="centered-bg"></div>
 
-    <!-- 22 - Height and Width -->
+    <!-- 22 - Height and Width (altura e largura)-->
     <div class="height-width"></div>
     <div class="height-width-2"></div>
 
-    <!-- 23 - Padding -->
-    <div class="without-padding">Este nao tem padding</div> 
-    <div class="padding">Este tem padding</div> 
+    <!-- 23 - Padding (espaçamento interno)-->
+    <div class="without-padding">Este nao tem padding</div>
+    <div class="padding">Este tem padding</div>
 
     <!-- 24 Padding individual (top, left, right, bottom)-->
     <p class="padding-individual">Este elemento tem paddings diferentes</p>
@@ -136,11 +136,11 @@
 
     <!-- 26 - Padding e Width -->
     <div class="without-border-box">
-        <p>Algum conteúdo</p>
+      <p>Algum conteúdo</p>
     </div>
 
     <div class="border-box">
-        <p>Algum conteúdo</p>
+      <p>Algum conteúdo</p>
     </div>
 
     <!-- 27 - Border -->
@@ -148,106 +148,106 @@
     <div class="border-2">Borda 2</div>
 
     <!-- 28 - Borda individual -->
-    <p class="border-left">Borda na esquerda</p> 
-    <p class="border-bottom">Borda inferior</p> 
+    <p class="border-left">Borda na esquerda</p>
+    <p class="border-bottom">Borda inferior</p>
 
     <!-- 29 - Borda arredondada -->
     <div class="rounded-p">Arredondado</div>
     <div class="rounded-p-2">Arredondado2</div>
 
     <!-- 30 - Margin -->
-    <div class="margin">Margem</div> 
-    <div class="margin-top">Margem topo</div> 
+    <div class="margin">Margem</div>
+    <div class="margin-top">Margem topo</div>
     <div class="margin-shorthand">Margem shorthand</div>
-    
+
     <!-- 31 - Box Model -->
     <div class="box-model">
-        <p>Tenho todas as propriedades do box model</p>
-    </div> 
+      <p>Tenho todas as propriedades do box model</p>
+    </div>
 
     <!-- 32 - Alinhamento de texto -->
-    <p class="text-aligned">Alinhado à direita</p> 
+    <p class="text-aligned">Alinhado à direita</p>
     <div class="container-center">
-        <h2>Centralizado</h2>
-        <p>Texto</p>
+      <h2>Centralizado</h2>
+      <p>Texto</p>
     </div>
 
     <!-- 33 - Text decoration -->
-    <p class="underline">Eu tenho underline</p> 
+    <p class="underline">Eu tenho underline</p>
     <p class="line-trough">Eu tenho um risco</p>
     <a href="#" class="remove-underline">Sem underline</a>
 
     <!-- 34 - Transformação de texto -->
-    <p class="upper">Texto em caixa alta</p> 
-    <p class="lower">ESTE É UM TEXTP EM LOWER</p> 
+    <p class="upper">Texto em caixa alta</p>
+    <p class="lower">ESTE É UM TEXTP EM LOWER</p>
 
     <!-- 35 - Espaçamento de letras -->
-    <h2 class="spacing">Espaçamento maior</h2> 
+    <h2 class="spacing">Espaçamento maior</h2>
 
     <!-- 36 - Fontes -->
-    <p class="serif">Serif fonte</p> 
-    <p class="sans-serif">Sans-Serif fonte</p> 
-    <p class="monospace">monospace fonte</p> 
-    <p class="cursive">cursive fonte</p> 
-    <p class="fantasy">fantasy fonte</p> 
+    <p class="serif">Serif fonte</p>
+    <p class="sans-serif">Sans-Serif fonte</p>
+    <p class="monospace">monospace fonte</p>
+    <p class="cursive">cursive fonte</p>
+    <p class="fantasy">fantasy fonte</p>
 
     <!-- 37 - Font styles -->
-    <p class="italic">Itálico</p> 
-    <p class="oblique">Oblíquo</p> 
-    
+    <p class="italic">Itálico</p>
+    <p class="oblique">Oblíquo</p>
+
     <!-- 38 - Font Weight -->
-    <p class="thin">Mais fino</p> 
-    <p class="bold">em bold</p> 
-    <p class="bolder">maior fonte</p> 
+    <p class="thin">Mais fino</p>
+    <p class="bold">em bold</p>
+    <p class="bolder">maior fonte</p>
 
     <!-- 39 - Font size -->
     <h4 class="small">Título pequeno</h4>
     <h4 class="big">Título grande</h4>
 
     <!-- 40 - Display -->
-    <div class="inline-box">a</div> 
-    <div class="inline-box">b</div> 
-    <div class="inline-box">c</div> 
+    <div class="inline-box">a</div>
+    <div class="inline-box">b</div>
+    <div class="inline-box">c</div>
     <span class="block">Teste</span>
     <span class="block">Teste2</span>
 
     <!-- 41 - Escondendo elementos -->
     <p class="invisible">Me encontre se puder</p>
-    
+
     <!-- 42 - Position Static -->
     <div class="static">
-        <span>Eu sou estático</span>
+      <span>Eu sou estático</span>
     </div>
 
     <!-- 43 - Position Relative -->
     <div class="relative">
-        <span>Eu sou relativo</span>
+      <span>Eu sou relativo</span>
     </div>
     <p>Eu sou u parágrafo</p>
 
     <!-- 44 - Position Absolute  -->
     <div class="absolute">
-        <span>Eu sou absoluto</span>
+      <span>Eu sou absoluto</span>
     </div>
     <p>Eu sou um parágrafo</p>
 
     <!-- 45 - Relative com absolute  -->
     <div class="relative-container">
-        <div class="absolute"></div>
-        <div class="absolute2"></div>
-    </div>container
+      <div class="absolute"></div>
+      <div class="absolute2"></div>
+    </div>
+    container
 
     <!-- 46 - Position fixed  -->
     <div class="fixed">
-        <span>Estou fixo</span>
+      <span>Estou fixo</span>
     </div>
 
     <!-- 48 - Z Index  -->
     <div class="relative-container">
-        <div class="absolute3"></div>
-        <div class="absolute4"></div>
-        <div class="absolute5"></div>
+      <div class="absolute3"></div>
+      <div class="absolute4"></div>
+      <div class="absolute5"></div>
     </div>
-
-</body>
+  </body>
 </html>
