@@ -168,7 +168,7 @@ body {
   flex-shrink: 2;
 }
 
-/* shorthand */
+/* shorthand (grow - shrink - basis)*/
 .shorthand {
   display: flex;
 }
