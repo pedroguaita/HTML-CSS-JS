@@ -1,0 +1,136 @@
+/* Geral */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ccc;
+}
+
+header {
+  background-image: url(../img/imagens/bg-3.jpg);
+  position: relative;
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* menu separado no topo */
+#navbar {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+#navbar a {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: background-color 0.25s ease, border-color 0.25s ease,
+    transform 0.2s ease;
+}
+
+#navbar a:hover {
+  background: rgba(0, 0, 0, 0.55);
+  border-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+/* bloco do texto no meio */
+.hero-content h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+#subtitulo {
+  margin-top: 16px;
+  padding: 10px 14px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 4px;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+}
+
+.container {
+  display: flex;
+  padding: 2rem 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-cont {
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+}
+
+.materia {
+  background-color: #fff;
+  padding: 12px 12px;
+  margin-bottom: 1rem;
+}
+
+.materia h2 {
+  padding: 6px 6px;
+  font-size: 20px;
+  background-color: #f6f6f6;
+  border-bottom: 2px solid #d7d1d1;
+  margin-bottom: 10px;
+}
+
+.materia p {
+  padding: 2px 2px;
+}
+
+.materia a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f6f6f6;
+  border: 2px solid #d7d1d1;
+  padding: 10px 14px;
+  color: #0044cc;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito hover */
+.materia a:hover {
+  background-color: #0044cc;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+footer {
+  display: flex;
+  padding: 20px 20px;
+  background-color: #606060;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: #fff;
+}
