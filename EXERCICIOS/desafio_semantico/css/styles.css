@@ -134,3 +134,45 @@ footer {
 footer p {
   color: #fff;
 }
+
+/* Responsividade */
+@media (max-width: 900px) {
+  header {
+    height: 450px;
+    background-size: cover;
+    background-position: right bottom;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+  }
+
+  li a {
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    height: 300px;
+    background-size: cover;
+    background-position: right bottom;
+  }
+
+  .hero-content h1 {
+    font-size: 18px;
+  }
+
+  .hero-content p {
+    font-size: 10px;
+  }
+
+  #nav-items {
+    font-size: 6px;
+    padding: 6px 10px;
+  }
+}
