@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="css/styles_cadastro.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-container">
+        <div class="title">
+          <h3 id="meta">Meta</h3>
+          <h1>Comece a usar o Instagram</h1>
+          <p>Cadastre-se para ver fotos e vídeos dos seus amigos.</p>
+        </div>
+
+        <div class="form-container">
+          <h2>Número de celular ou email</h2>
+          <form id="sign-up">
+            <input
+              type="text"
+              name="cellphone-number_email"
+              placeholder="Número de celular ou email"
+            />
+            <p>
+              Você poderá receber notificações enviadas por nós.
+              <a href="https://help.instagram.com/574047304429005"
+                >Saiba por que pedimos suas informações de contato</a
+              >
+            </p>
+
+            <h2>Senha</h2>
+            <input type="password" name="password" placeholder="Senha" />
+
+            <h2>Data de nascimento</h2>
+            <div class="dob-inputs">
+              <input
+                class="dob"
+                type="text"
+                inputmode="numeric"
+                placeholder="Dia"
+                maxlength="2"
+              />
+              <select class="dob" name="month" required>
+                <option value="" selected disabled>Mês</option>
+                <option>Janeiro</option>
+                <option>Fevereiro</option>
+                <option>Março</option>
+                <option>Abril</option>
+                <option>Maio</option>
+                <option>Junho</option>
+                <option>Julho</option>
+                <option>Agosto</option>
+                <option>Setembro</option>
+                <option>Outubro</option>
+                <option>Novembro</option>
+                <option>Dezembro</option>
+              </select>
+              <input
+                class="dob"
+                type="text"
+                inputmode="numeric"
+                placeholder="Ano"
+                maxlength="4"
+              />
+            </div>
+
+            <h2>Nome</h2>
+            <input type="text" name="name" placeholder="Nome completo" />
+
+            <h2>Nome de usuário</h2>
+            <input type="text" name="username" placeholder="Nome de usuário" />
+
+            <p>
+              As pessoas que usam nosso serviço podem ter carregado suas
+              informações de contato no Instagram.
+              <a href="https://www.facebook.com/help/instagram/261704639352628"
+                >Saiba Mais</a
+              >.
+            </p>
+
+            <p>
+              Ao tocar em Enviar, você concorda em criar uma conta e em seguir
+              os
+              <a href="#">Termos</a>, a
+              <a href="#">Política de Privacidade</a> e a
+              <a href="#">Política de Cookies</a> do Instagram.
+            </p>
+
+            <p>
+              A <a href="#">Política de Privacidade</a> descreve como podemos
+              usar as informações que coletamos quando você cria uma conta. Por
+              exemplo, usamos essas informações para fornecer, personalizar e
+              melhorar nossos produtos, incluindo anúncios.
+            </p>
+
+            <button class="send" type="submit">Enviar</button>
+            <button class="alreadyHave" type="button">
+              Ja tenho uma conta
+            </button>
+          </form>
+        </div>
+
+        <footer>
+          <nav>
+            <ul class="links">
+              <li><a href="#">Meta</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Carreiras</a></li>
+              <li><a href="#">Ajuda</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Privacidade</a></li>
+              <li><a href="#">Termos</a></li>
+              <li><a href="#">Localizações</a></li>
+              <li><a href="#">Instagram Lite</a></li>
+              <li><a href="#">Meta Verified</a></li>
+            </ul>
+          </nav>
+          <p id="copyright">&copy;2026 Instagram from Meta</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

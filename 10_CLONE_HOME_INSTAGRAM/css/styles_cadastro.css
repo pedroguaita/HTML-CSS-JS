@@ -1,0 +1,202 @@
+/* =========================
+   BASE (BODY)
+   ========================= */
+
+/* Define o “tema” geral da página: fundo, fonte padrão e cor do texto */
+body {
+  background-color: #152127; /* cor de fundo (igual ao site original) */
+
+  /* Fonte “system”: usa a fonte do sistema operacional (parecido com Instagram) */
+  font-family:
+    "Instagram Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size: 14px; /* tamanho base do texto (o restante pode herdar) */
+  color: #f4f4f4; /* cor padrão do texto */
+  line-height: 20px;
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+/* =========================
+   LAYOUT (CONTAINER)
+   ========================= */
+
+/* Container principal: limita a largura do conteúdo e centraliza na tela */
+.container {
+  max-width: 720px; /* largura máxima do “miolo” */
+  margin: 10px auto 0; /* centraliza horizontalmente (auto) e dá espaço em cima */
+  padding: 0 24px; /* respiro nas laterais (bom em telas menores) */
+}
+
+/* Sub-container: deixa title + form com a mesma largura menor (igual ao original) */
+.main-container {
+  max-width: 500px; /* largura máxima dos blocos internos */
+  margin: 0 auto; /* centraliza dentro do .container */
+}
+
+/* Dá um espaço entre o título e o formulário */
+.form-container {
+  margin-top: 24px;
+}
+
+/* =========================
+   CAMPOS DO FORM (INPUT/SELECT)
+   ========================= */
+
+/* Estilo base para inputs e selects dentro do formulário */
+.form-container input,
+.form-container select {
+  width: 100%; /* ocupa toda a largura disponível do bloco */
+  padding: 15px; /* espaçamento interno */
+  border-radius: 10px; /* cantos arredondados */
+  background-color: #152127;
+  color: #f4f4f4;
+  border: 2px solid #616161;
+}
+
+/* =========================
+   DOB (DATA DE NASCIMENTO: Dia/Mês/Ano)
+   ========================= */
+
+/* Coloca Dia/Mês/Ano lado a lado */
+.form-container .dob-inputs {
+  display: flex; /* transforma os filhos em itens flex (mesma linha) */
+  gap: 12px; /* espaço fixo entre os campos (mais previsível que space-between) */
+}
+
+/* Faz os 3 campos (input/select) dividirem o espaço igualmente */
+.form-container .dob-inputs .dob {
+  flex: 1; /* cada campo cresce igualmente */
+  width: auto; /* impede o width:100% de “atropelar” o flex dentro da linha */
+}
+
+/* =========================
+   FOOTER (IGUAL AO ORIGINAL)
+   ========================= */
+
+/* Footer fica abaixo do conteúdo e centralizado */
+footer {
+  margin-top: 32px; /* espaço acima do footer */
+  padding: 16px 0; /* respiro vertical */
+  text-align: center; /* centraliza o texto do copyright */
+}
+
+/* Lista de links do footer: em linha, centralizada e quebra bonitinho */
+footer .links {
+  display: flex; /* coloca os <li> na mesma linha */
+  flex-wrap: wrap; /*permite quebrar linha quando faltar espaço  */
+  justify-content: center; /* centraliza os links no meio */
+  gap: 14px; /* espaçamento uniforme entre links */
+
+  list-style: none; /* remove as bolinhas da lista */
+  padding: 0; /* remove padding padrão do <ul> */
+  margin: 0 0 10px; /* tira margem padrão e dá espaço antes do copyright */
+  flex-direction: row;
+}
+
+/* Remove o margin-left antigo (agora o espaçamento é controlado por gap) */
+footer .links li {
+  margin: 0;
+}
+
+/* Estilo dos links do footer (mais “apagado”, igual Instagram) */
+footer .links a {
+  color: rgba(244, 244, 244, 0.65); /* cinza claro com transparência */
+  font-size: 12px; /* menor que o texto normal */
+  text-decoration: none; /* sem sublinhado */
+}
+
+/* Hover do footer: sublinha */
+footer .links a:hover {
+  text-decoration: underline;
+}
+
+/* Copyright com cor e tamanho mais discretos */
+footer p {
+  color: rgba(244, 244, 244, 0.55);
+  font-size: 12px;
+}
+
+/* =========================
+   LINKS (GERAL)
+   ========================= */
+
+/* Links do conteúdo (dentro do form/textos) */
+a {
+  text-decoration: none; /* tira sublinhado */
+  color: #5aa7ff; /* azul padrão dos links */
+  transition: 0.4s; /* suaviza a mudança no hover (faltava o "s") */
+  font-size: 14px; /* tamanho de fonte dos links */
+  font-weight: 400;
+}
+
+/* Ao passar o mouse, sublinha e muda levemente o tom */
+a:hover {
+  text-decoration: underline;
+  color: #5691d5;
+}
+
+/* =========================
+   TIPOGRAFIA (TAMANHOS)
+   ========================= */
+
+h1 {
+  font-size: 24px; /* título principal */
+  line-height: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 18px; /* subtítulos do form */
+}
+
+h3 {
+  font-size: 14px; /* “Meta” */
+  line-height: 18px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px; /* texto normal dentro do form */
+  line-height: 20px;
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+/* títulos dos campos tipo "Senha", "Nome" */
+h2,
+.label-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  color: #f4f4f4;
+}
+
+.send {
+  padding: 15px;
+  border-radius: 25px;
+  background-color: #1877f2;
+  width: 100%;
+}
+
+.alreadyHave {
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: #152127;
+  width: 100%;
+  border: 2px solid #616161;
+}
