@@ -144,7 +144,7 @@ array.push("Dá", "Para", "Inserir", "Vários");
 
 console.log(array);
 
-// 12 - shift e unshift
+// 12 - shift e unshift     REMOVE/ ADD NO INCIO
 
 const letters = ["a", "b", "c"];
 

@@ -85,10 +85,10 @@ parOuImpar(6);
 
 // 6 - mais sobre arrow functions
 const raizQuadrada = (x) => {
-  return x * x;
+  return x ** 0.5;
 };
 
-const raizQuadrada2 = (n) => n * n;
+const raizQuadrada2 = (n) => n ** 0.5;
 
 console.log(raizQuadrada(4));
 console.log(raizQuadrada2(4));
@@ -205,3 +205,23 @@ const num = 6;
 const result = factorial(num);
 
 console.log(`O fatorial do número ${num} é ${result}`);
+
+//
+
+function criaPessoa(nome, sobrenome, idade) {
+  return { nome, sobrenome, idade };
+}
+
+const pessoa1 = criaPessoa("Pedro", "Guaita", 21);
+
+console.log(pessoa1.nome);
+
+const pessoa2 = {
+  nome: "Pedro",
+  sobrenome: "Guaita",
+  idade: 21,
+
+  fala() {
+    console.log(`${this.nome} ${this.sobrenome} está falando oi...`);
+  },
+};
