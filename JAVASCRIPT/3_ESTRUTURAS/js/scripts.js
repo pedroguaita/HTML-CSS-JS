@@ -126,6 +126,14 @@ if (userName === "José") {
   console.log("Nenhuma condição aceita!");
 }
 
+//OPERAÇÃO TERNÁRIA:
+const pontuacaoUsuario = 1000;
+const nivelUsuario =
+  pontuacaoUsuario >= 1000 ? "Usuário VIP" : "Usuário normal";
+
+const corUsuario = "Pink";
+const corPadrao = corUsuario || "Preta";
+
 // 10 while
 let p = 0;
 
